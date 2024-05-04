@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>MY PORFOLIO</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <!-- membuat navbar dengan brand, mengunakan nama letaknya top agar di scrool tetap ada dan warnanya inverse -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navrbar-header">
+          <!-- boton berfungsi ketika kita mengunakan layar hp, ia akan menjadi tombol navigasi -->
+          <button
+            type="button"
+            class="navbar-toggle collapse"
+            data
+            toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a href="#home" class="navbar-brand page-scroll">Aven Meo</a>
+        </div>
+
+        <!-- padabagian class navbarnya kita bisa berpindah halaman dengan menglik setiap navigasi -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about" class="page-scroll">About</a></li>
+            <li><a href="#portfolio" class="page-scroll">Portfolio</a></li>
+            <li><a href="#contact" class="page-scroll">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ahkir navbar -->
+
+    <!-- jumbotron -->
+    <div class="jumbotron text-center">
+      <img src="img/aven.jpeg" class="img-circle" />
+      <h1>AVEN MEO</h1>
+      <p>MAHASISWA | WEB DEVELOPER | TREVELING</p>
+    </div>
+    <!-- ahkir jumbotron -->
+
+    <!-- about -->
+    <!-- row untuk about, dalam about ada conteiner sendiri, dalam cointener ada kelas row untuk ukuran layar, dan colom -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="text-center">About</h2>
+            <hr />
+          </div>
+        </div>
+        <!-- dalam row ada 2 colom dengan ukuran sm dan jumlah adalah 5 mengunakan offsetnya 1 agar tulisan dapat ketengah -->
+        <div class="row">
+          <div class="col-sm-5 col-sm-offset-1">
+            <p>
+              “Saya tidak bisa mengubah arah angin, namun saya bisa menyesuaikan
+              pelayaran saya untuk selalu menggapai tujuan saya.” <p>“Tanpa sasaran
+              dan rencana meraihnya, kamu seperti kapal yang berlayar tanpa
+              tujuan.”</p>
+              <p>“Tindakan menyalahkan hanya akan membuang waktu. Sebesar apapun kesalahan yang kamu timpakan ke orang lain, dan sebesar apapun kamu menyalahkannya, hal tersebut tidak akan mengubahmu.”</p>
+            </p>
+          </div>
+          <div class="col-sm-5">
+            <p>
+              “Banyak orang gagal dalam kehidupan, bukan karena kurangnya
+              kemampuan, pengetahuan, atau keberanian, namun hanya karena mereka
+              tidak pernah mengatur energinya pada sasaran.”
+              <p> “Jika kamu ingin
+              bahagia, tetapkan sasaran yang membangkitkan pikiran, membebaskan
+              energi, dan menginspirasi harapanmu.”</p>
+            </p>
+            <p>“Orang yang lemah tidak mampu memaafkan. Memaafkan adalah ciri orang yang kuat.”</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ahkir about -->
+
+    <!-- portfolio -->
+    <!--membuat portfolio menggunakan id -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2>portfolio</h2>
+            <hr />
+          </div>
+        </div>
+        <!-- membuat row yang lain, seperti buka tutup imgnya -->
+        <!-- membuat 3 colom dengan masing masing 4 -->
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="img/portfolio/aven1.jpg" />
+            </a>
+          </div>
+
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="img/portfolio/aven2.jpg" />
+            </a>
+          </div>
+
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+              <img src="img/portfolio/aven3.jpg" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ahkir portfolio -->
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2>Contact</h2>
+            <hr />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-col-sm-8 col-sm-offset-2">
+            <form>
+              <!-- membuat class from group contact -->
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Nama</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="masukan nama"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="masukan email"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Telpon</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="masukan telpon"
+                />
+              </div>
+
+              <select class="form-select" aria-label="Default select example">
+                <option selected>--Pilih Kategori--</option>
+                <option value="1">Web Desig</option>
+                <option value="2">Web Development</option>
+              </select>
+
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Pesan</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                ></textarea>
+              </div>
+
+              <!-- buat button untuk kirim pesan dan warna pada kirim pesan primary -->
+              <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ahkir contact -->
+
+    <!-- footer -->
+    <footer>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-ms-12">
+            <p>
+              215410094 | built by.
+              <a href="http://instagram.com/avenmeo">Aven Meo</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ahkir footer -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
